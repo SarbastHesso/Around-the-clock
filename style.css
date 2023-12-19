@@ -14,34 +14,42 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .clock-container {
-    width: 512px;
-    height: 512px;
+    width: 400px;
+    height: 400px;
     position: relative;
     margin: auto;
     background-image: url('./assets/face-nonumbers.svg');
+    background-size: contain;
     background-color: #ffffff;
     border-radius: 50%;
 }
 
 .hours {
+    width: 400px;
+    height: 400px;
     position: absolute;
 }
 
 .minutes {
+    width: 400px;
+    height: 400px;
     position: absolute;
 }
 
 .time-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 2rem 0;
-    /* display: flex; */
     align-items: center;
     gap: 1rem;
     display: none;
+}
+
+.show-text {
+    display: flex;
 }
 
 .time-text span {
@@ -50,16 +58,16 @@ body {
 
 #time-24 {
     background-color: #ffffff56;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     border-radius: 1rem;
 }
 
 button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     outline: none;
     padding: 1rem 2rem;
     border-radius: 2rem;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }

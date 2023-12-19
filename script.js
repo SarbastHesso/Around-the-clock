@@ -1,7 +1,7 @@
 const hour = document.querySelector('#hour');
 const minute = document.querySelector('#minute');
 const time24 = document.querySelector('#time-24');
-const timeText = document.querySelector('.time-text');
+const timeText = document.querySelector('#time-text');
 const btn = document.querySelector('#btn');
 
 setInterval (() => {
@@ -20,10 +20,14 @@ setInterval (() => {
 
 }, 1000)
 
+
 btn.addEventListener ('click', (e) => {
     e.preventDefault()
-    if (timeText.style.display = 'none'){
-        timeText.style.display = 'flex'
-        btn.innerHTML = 'Dölj tiden i text'
-    } 
-} )
+    if (btn.textContent === 'Visa i digital form'){
+        btn.textContent = "Dölj i digital form";
+        timeText.classList.add('show-text')
+    } else {
+        btn.textContent = "Visa i digital form";
+        timeText.classList.remove('show-text')
+    }
+})
