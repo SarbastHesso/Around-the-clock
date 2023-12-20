@@ -41,8 +41,9 @@ body {
 }
 
 .time-output {
+    height: 80px;
     font-size: 2.5rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     align-items: center;
     gap: 1rem;
     display: none;
@@ -58,7 +59,7 @@ body {
 
 #time-24 {
     background-color: #ffffff56;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
 }
 
