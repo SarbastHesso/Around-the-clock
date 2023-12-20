@@ -1,5 +1,6 @@
 const hour = document.querySelector("#hour");
 const minute = document.querySelector("#minute");
+const second = document.querySelector("#second");
 const timeOutput = document.querySelector("#time-output");
 const time24 = document.querySelector("#time-24");
 const timeText = document.querySelector("#time-text");
@@ -10,14 +11,17 @@ setInterval(() => {
   let time = new Date();
   let hr = time.getHours();
   let min = time.getMinutes();
+  let sec = time.getSeconds();
 
   hr_rotation = 30 * hr + min / 2;
   min_rotation = 6 * min;
+  sec_rotation = 6 * sec;
 
   hour.style.transform = `rotate(${hr_rotation}deg)`;
   minute.style.transform = `rotate(${min_rotation}deg)`;
+  second.style.transform = `rotate(${sec_rotation}deg)`;
 
-  time24.innerHTML = hr + ":" + min;
+  time24.innerHTML = hr + ":" + min + ':' + sec;
 
   let minutesArray = [
     "",

@@ -22,7 +22,7 @@ body {
     height: 400px;
     position: relative;
     margin: auto;
-    background-image: url('./assets/face-nonumbers.svg');
+    background-image: url('./assets/face.svg');
     background-size: contain;
     background-color: #ffffff;
     border-radius: 50%;
@@ -38,6 +38,13 @@ body {
     width: 400px;
     height: 400px;
     position: absolute;
+}
+
+.seconds {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    opacity: .3;
 }
 
 .time-output {
