@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    margin: 50px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,16 +60,25 @@ body {
 
 .show-output {
     display: flex;
+    justify-content: center;
 }
 
 .time-output span {
     font-weight: bold;
 }
 
-#time-24 {
-    background-color: #ffffff56;
-    padding: 1rem 2rem;
+#time-24, #time-text {
+    text-align: center;
+    box-shadow: 0 3px 10px 3px #0000003a;
+    padding: .5rem 2rem;
     border-radius: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
