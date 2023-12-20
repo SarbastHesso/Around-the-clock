@@ -69,7 +69,7 @@ setInterval(() => {
     "tolv",
   ];
 
-  let hourText = hoursArray[min > 24 ? hr + 1 : hr];
+  let hourText = hoursArray[min >= 23 ? hr + 1 : hr];
 
   timeText.innerHTML = `${minuteText} ${hourText}`;
   
