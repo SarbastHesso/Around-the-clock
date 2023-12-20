@@ -40,7 +40,7 @@ body {
     position: absolute;
 }
 
-.time-text {
+.time-output {
     font-size: 2.5rem;
     margin: 2rem 0;
     align-items: center;
@@ -48,11 +48,11 @@ body {
     display: none;
 }
 
-.show-text {
+.show-output {
     display: flex;
 }
 
-.time-text span {
+.time-output span {
     font-weight: bold;
 }
 
@@ -69,5 +69,5 @@ button {
     padding: 1rem 2rem;
     border-radius: 2rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin: 1rem;
 }
