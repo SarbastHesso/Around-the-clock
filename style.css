@@ -5,8 +5,13 @@
 }
 
 body {
-    background-color: #f2c62a;
+    background-color: #000000;
+    background-image: url('./assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     height: 100vh;
+    opacity: .8;
 }
 
 .container {
@@ -27,7 +32,7 @@ body {
     background-size: contain;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 3px 3px 20px 10px #0000003a;
+    box-shadow: 3px 3px 20px 10px #3a0c0c3a;
 }
 
 .hours {
@@ -65,6 +70,7 @@ body {
 
 .time-output span {
     font-weight: bold;
+    color: #ffffff;
 }
 
 #time-24, #time-text {
